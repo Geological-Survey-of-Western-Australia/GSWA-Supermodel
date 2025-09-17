@@ -1,5 +1,7 @@
 # Geosample Model
 
+RDF: [geosample.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/geosample.ttl)
+
 <a href="../../assets/geosamples-overview.svg">
 <figure id="figure-bh" markdown style="width:70%">
   ![](../assets/geosamples-overview.svg)

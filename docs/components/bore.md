@@ -1,5 +1,7 @@
 # Bore Model
 
+RDF: [bore.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/bore.ttl)
+
 ## Overview
 
 A model that describes physical, functional and operational aspects of Bores, sometimes known as Wells.

@@ -212,11 +212,14 @@ The above query will extract objects of class Bore - `?bh a bore:Bore` - with lo
 
 ## Status
 
-**August 2024**
+**October 2025**
 
-This Supermodel is forming the backbone to the integration of multiple datasets in GSWA, such as MINEDEX & WAGIMS, that have not always been easy to crosswalk, as well as using up-and-coming national geosciene models, such as the [Bores Model](https://linked.data.gov.au/def/bore) and the proposed GGIC [Geochemistry Data Model](https://linked.data.gov.au/def/geochem).
+As of October 2025, this supermodel is partially deployed within GSWA's proto-production Knowledge Graph which feeds the Discovery Portal, due for an updated release in November 2025. 
 
-Currently, as of August 2024, the individual models of this Supermodel that have been established are listed in the [Component Models](components/index.md) to the left.
+The specialised dataset models for GSWA's WAROX, MINEDEX, DRILLHOLES etc. databases are continuing to be further aligned with this Supermodel's Component Models however most of the major classes, such as `sosa:Sample`, `bore:Bore` etc. have already been implemented and this leads to tight integration, e.g. objects of type `Bore` can be selected in a single Knowledge Graph query from both DRILLHOLES and WAROX.
+
+Vocabularies in GSWA's [vocabulary server](https://vocabulary.gswa.kurrawong.ai/) are also continually being folded into this Supermodel, for example the use of [GSWA's _Borehole Status_ vocab](https://linked.data.gov.au/def/borehole-status-wa) within the [Bore Model](components/bore.md). 
+
 
 ## License & Rights
 

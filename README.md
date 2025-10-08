@@ -4,7 +4,7 @@ This repository contains the source code for the GSWA Supermodel which is an ent
 
 Please see the model documentation online at:
 
-* <http://Geological-Survey-of-Western-Australia.github.io/gswa-supermodel/>
+* <https://geological-survey-of-western-australia.github.io/GSWA-Supermodel/>
 
 ## License & Rights
 

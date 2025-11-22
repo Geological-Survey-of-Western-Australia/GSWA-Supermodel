@@ -1,0 +1,189 @@
+PREFIX : <https://linked.data.gov.au/dataset/gswa/role/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/dataset/gswa/role>
+PREFIX gswa: <https://linked.data.gov.au/dataset/gswa/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:1 rdfs:label "1" .
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status astatus:experimental ;
+    owl:versionIRI :1 ;
+    skos:definition "Roles that addresses in GSWA's internal databases play"@en ;
+    skos:historyNote "Created in 2025-09 to assist with GSWA ETL code enhancements" ;
+    skos:prefLabel "Date Roles"@en ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2025-09-19"^^xsd:date ;
+    schema:dateModified "2025-09-19"^^xsd:date ;
+    schema:keywords themes:data-acquisition ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1" ;
+    skos:hasTopConcept
+        :applied ,
+        :basicRelevant ,
+        :cease ,
+        :death ,
+        :expiry ,
+        :grant ,
+        :hydroDrill ,
+        :initialGrant ,
+        :issue ,
+        :measurement ,
+        :received ,
+        :release ,
+        :relevant ,
+        :rigRelease ,
+        :spudOrKickOff ,
+        :td ;
+.
+
+:applied
+    a skos:Concept ;
+    skos:definition "applied date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "applied date"@en ;
+    skos:notation "applied_date"^^gswa:dbCode ;
+.
+
+:basicRelevant
+    a skos:Concept ;
+    skos:definition "basic relevant date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "basic relevant date"@en ;
+    skos:notation "applied_date"^^gswa:dbCode ;
+.
+
+:cease
+    a skos:Concept ;
+    skos:definition "cease date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "cease date"@en ;
+    skos:notation "applied_date"^^gswa:dbCode ;
+.
+
+:death
+    a skos:Concept ;
+    skos:definition "death date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "death date"@en ;
+    skos:notation "applied_date"^^gswa:dbCode ;
+.
+
+:expiry
+    a skos:Concept ;
+    skos:definition "expiry date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "expiry date"@en ;
+    skos:notation "applied_date"^^gswa:dbCode ;
+.
+
+:grant
+    a skos:Concept ;
+    skos:definition "grant date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "grant date"@en ;
+    skos:notation "applied_date"^^gswa:dbCode ;
+.
+
+:hydroDrill
+    a skos:Concept ;
+    skos:definition "hydro drill date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "hydro drill date"@en ;
+    skos:notation "hydro_drill_date"^^gswa:dbCode ;
+.
+
+:initialGrant
+    a skos:Concept ;
+    skos:definition "initial grant date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "initial grant date"@en ;
+    skos:notation "initial_grant_date"^^gswa:dbCode ;
+.
+
+:issue
+    a skos:Concept ;
+    skos:definition "issue date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "issue date"@en ;
+    skos:notation "issue_date"^^gswa:dbCode ;
+.
+
+:measurement
+    a skos:Concept ;
+    skos:definition "measurement date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "measurement date"@en ;
+    skos:notation "measurement_date"^^gswa:dbCode ;
+.
+
+:received
+    a skos:Concept ;
+    skos:definition "received date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "received date"@en ;
+    skos:notation "received_date"^^gswa:dbCode ;
+.
+
+:release
+    a skos:Concept ;
+    skos:definition "release date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "release date"@en ;
+    skos:notation "release_date"^^gswa:dbCode ;
+.
+
+:relevant
+    a skos:Concept ;
+    skos:definition "relevant date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "relevant date"@en ;
+    skos:notation "relevant_date"^^gswa:dbCode ;
+.
+
+:rigRelease
+    a skos:Concept ;
+    skos:definition "rig release date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "rig release date"@en ;
+    skos:notation "rig_release_date"^^gswa:dbCode ;
+.
+
+:spudOrKickOff
+    a skos:Concept ;
+    skos:definition "spud or kick off date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "spud or kick off date"@en ;
+    skos:notation "sub_or_kick_off_date"^^gswa:dbCode ;
+.
+
+:td
+    a skos:Concept ;
+    skos:definition "TD date"@en ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:prefLabel "TD date"@en ;
+    skos:notation "td_date"^^gswa:dbCode ;
+.

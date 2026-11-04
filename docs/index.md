@@ -64,9 +64,12 @@ Additionally, this Supermodel contains the following model support content:
 
 ## Technical Assets
 
-All parts of this Supermodel, for example individual Component Models or supporting vocabularies, are outlined here in human-readable form (documentation) and their machine-readable forms for such as their schema and data validators are linked to as well. 
+All parts of this Supermodel, for example individual Component Models or supporting vocabularies, are outlined here in
+human-readable form (documentation) and their machine-readable forms, such as their schemas and data validators, are
+linked to as well.
 
-Within the formal definition of this Supermodel , all the 'resources' of the Supermodel parts are listed and the roles that each play are given. See the [Supermodel Definition](#supermodel-definition).
+Within the formal definition of this Supermodel, all the 'resources' of the Supermodel parts are listed and the roles
+that each play are given. See the [Supermodel Definition](#supermodel-definition).
 
 ## Supermodel Definition
 
@@ -118,7 +121,9 @@ The following prefixed namespaces are used in class and property definition tabl
 | `skos`     | `http://www.w3.org/2004/02/skos/core#`  | [Simple Knowledge Organization System](https://www.w3.org/TR/skos-reference/): a model for controlled vocabularies             |
 | `xsd`      | `http://www.w3.org/2001/XMLSchema#`     | [XML Schema Definitions Datatypes](https://www.w3.org/TR/xmlschema11-2/)                                                       |
 
-These namespaces appear at the start of RDF data files in the [Turtle](https://www.w3.org/TR/turtle/) format (see next subsection) and SPARQL query text (the section after the next section) in a form similar to this table, for example in the schema for the [Bore Model](components/bore.md) you can see the prefix `bore`for its namespace on the first line: 
+These namespaces appear at the start of RDF data files in the [Turtle](https://www.w3.org/TR/turtle/) format (see next
+subsection) and SPARQL query text (the section after the next section) in a form similar to this table, for example in
+the schema for the [Bore Model](components/bore.md) you can see the prefix `bore` for its namespace on the first line:
 
 * `PREFIX bore: <https://linked.data.gov.au/def/bore/>`
 
@@ -157,7 +162,9 @@ All the prefixes in this code such as `ex:` and `schema:` are defined in the [Na
 
 ### SPARQL queries
 
-The [SPARQL query language](https://www.w3.org/TR/sparql12-query/) is the standard way to query Knowledge Graph's RDF data. SPARQL queries, which look a lot like SQL queries, specify a pattern that is used to extract part from a larger Knowledge Graph, a "subgraph".
+The [SPARQL query language](https://www.w3.org/TR/sparql12-query/) is the standard way to query Knowledge Graph RDF data.
+SPARQL queries, which look a lot like SQL queries, specify a pattern that is used to extract part from a larger Knowledge
+Graph, a "subgraph".
 
 For example, if we have the following data:
 
@@ -221,7 +228,7 @@ The specialised dataset models for GSWA's WAROX, MINEDEX, DRILLHOLES etc. databa
 Vocabularies in GSWA's [vocabulary server](https://vocabulary.gswa.kurrawong.ai/) are also continually being folded into this Supermodel, for example the use of [GSWA's _Borehole Status_ vocab](https://linked.data.gov.au/def/borehole-status-wa) within the [Bore Model](components/bore.md). 
 
 
-## License & Rights
+## Licence & Rights
 
 This repository's content is available for reuse according to the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 

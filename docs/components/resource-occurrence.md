@@ -4,16 +4,20 @@ RDF: [resources-occurrence.ttl](https://github.com/Geological-Survey-of-Western-
 
 ## Overview 
 
-Resource Occurrences are areas/volumes of the earth's crust that contain a resource of interest for exploitation. The general logic of an RO is that there is both an occurrence - presence or absence of something - that is interesting - perhaps in higher concentrations than elsewhere - and an exploitation potential. This model doesn't directly deal with exploitation potential and restricts its modelling to the _occurrence_ part only. 
+Resource Occurrences are areas/volumes of the Earth's crust that contain a resource of interest for exploitation. The
+general logic of an RO is that there is both an occurrence - presence or absence of something - that is interesting -
+perhaps in higher concentrations than elsewhere - and an exploitation potential. This model doesn't directly deal with
+exploitation potential and restricts its modelling to the _occurrence_ part only.
 
-Expected use of this model is to characterise the spatial presence of identified observable properties of parts of the earth's crust and then for external modelling to establish the exploitation potential.
+Expected use of this model is to characterise the spatial presence of identified observable properties of parts of the
+Earth's crust and then for external modelling to establish the exploitation potential.
 
 The figure below places ROs within a Features class hierarchy.
 
 <a href="../../assets/resource-occurrence/Key.svg">
 <figure id="figure-bh" markdown style="width:20%">
   ![](../assets/resource-occurrence/Key.svg)
-  <figcaption>Figure ROK: Key for of this Model's element figures</figcaption>
+  <figcaption>Figure ROK: Key for this Model's element figures</figcaption>
 </figure>
 </a>
 
@@ -22,7 +26,7 @@ The Key for the figure above and other figures in this model is below.
 <a href="../../assets/features-hierarchy/Hierarchy.svg">
 <figure id="figure-gfh" markdown style="width:80%">
   ![](../assets/features-hierarchy/Hierarchy.svg)
-  <figcaption>Figure ROH: A Feature class hierarchy within which this Model's elements exists</figcaption>
+  <figcaption>Figure ROH: A Feature class hierarchy within which this Model's elements exist</figcaption>
 </figure>
 </a>
 

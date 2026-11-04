@@ -15,7 +15,8 @@ The Background Models are inherited from by the Background Model, and thus the C
 </figure>
 </a>
 
-Each of the models indicated in the hierarchy above are described, and this Supermodel's use of them is described, in the following section.
+Each of the models indicated in the hierarchy above is described, and this Supermodel's use of them is described, in the
+following section.
 
 ## Models
 
@@ -25,7 +26,9 @@ Each of the models indicated in the hierarchy above are described, and this Supe
 
 "GeoSciML is a model of geological features commonly described and portrayed in geological maps, cross sections, geological reports and databases."
 
-This Supermodel uses GeoSciML indirectly: since GeoSciML is not a [Web Ontology Language](#owl)-based model, this Supermodel profiles GeoSciML be interpreting parts of its conceptual model into OWL Logical Models, such as the [Borehole Model](components/boreholes.md).
+This Supermodel uses GeoSciML indirectly: since GeoSciML is not a [Web Ontology Language](#owl)-based model, this
+Supermodel profiles GeoSciML by interpreting parts of its conceptual model into OWL Logical Models, such as the
+[Borehole Model](components/boreholes.md).
 
 
 ### FSDF Backbone Model	
@@ -65,7 +68,11 @@ This Supermodel uses VocPub to characterise all classification vocabularies.
 
 "[Describes]...observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties"
 
-This Supermodel uses SOSA to link `Result` instances, which are data objects such as some chemical's rate of occurrence in a material to the `Observation` acts that produced them. The `Observation` indicates the `Observable Properties` characterised, such as _amount of gold_, wich it taken from a controlled list of geological properties known to be of interest in characterising geological features. Those features - rock units, stratigraphic zones etc. - are the `Features of Interest` which are the ultimate targets of investigation.
+This Supermodel uses SOSA to link `Result` instances, which are data objects such as some chemical's rate of occurrence
+in a material to the `Observation` acts that produced them. The `Observation` indicates the `Observable Properties`
+characterised, such as _amount of gold_, which are taken from a controlled list of geological properties known to be of
+interest in characterising geological features. Those features - rock units, stratigraphic zones etc. - are the
+`Features of Interest` which are the ultimate targets of investigation.
 
 
 ### GeoSPARQL 
@@ -74,7 +81,8 @@ This Supermodel uses SOSA to link `Result` instances, which are data objects suc
 
 "...supports representing and querying geospatial data on the Semantic Web. GeoSPARQL defines a vocabulary for representing geospatial data in RDF. It also defines extensions to the SPARQL query language for processing geospatial data."
 
-This Supermodel uses GeoSAPRQL to represent all spatial phenomena a `Feature` instances which may have geospatial representation as `Geomentry` instances. Features are grouped into `FeatureCollection` objects.
+This Supermodel uses GeoSPARQL to represent all spatial phenomena as `Feature` instances which may have geospatial
+representation as `Geometry` instances. Features are grouped into `FeatureCollection` objects.
 
 
 ### DCAT
@@ -109,7 +117,8 @@ This Supermodel and all the models within this profile hierarchy, except for Geo
 
 ## Models not in the hierarchy
 
-The following models are not included in the profile hierarchy figure above to simplicity's sake but are nonetheless profiles by this Supermodel.
+The following models are not included in the profile hierarchy figure above for simplicity’s sake but are nonetheless
+profiled by this Supermodel.
 
 
 ### Profiles Vocabulary (PROF)

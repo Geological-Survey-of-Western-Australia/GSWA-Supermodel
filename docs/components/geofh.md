@@ -11,9 +11,10 @@ RDF: [geofh.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-
 
 ## Purpose 
 
-This component model describes the overarching hierarchy of geological and geospatial features classes used by GSWA to describe Mines, Sites, Cratons, Basins etc. and also Tenement Areas, Administrative Areas etc.
+This component model describes the overarching hierarchy of geological and geospatial feature classes used by GSWA to
+describe Mines, Sites, Cratons, Basins etc. and also Tenement Areas, Administrative Areas etc.
 
-The purpose of making a single hierarchy it to allow for the orderly integration of data about all types of feature. 
+The purpose of making a single hierarchy is to allow for the orderly integration of data about all types of feature.
 
 For example, the hierarchy groups the _Tenement Area_ & _Permit Area_ classes under the parent class _Administrative Feature_. This grouping allows querying of these two specialised classes on any properties of the parent as this hierarchy ensures they both have them.
 
@@ -23,8 +24,10 @@ The logic of this component model is shown in the class hierarchy diagram above:
 
 * all features known to GSWA are either 'Man-made', 'Natural' or some specialised form of either 
 * visible man-made features are Sites or a specialised form of Site, such as Bore
-* Administrative Features are man-mad features that may not be visible on the ground, e.g. a Tenement Area which may exist only in a GIS system
-* Resource Occurrences - where economically viable resources are - are natural but not geological features since they have non purely geological logic used to define them
+* Administrative Features are man-made features that may not be visible on the ground, e.g. a Tenement Area which may
+   exist only in a GIS system
+* Resource Occurrences - where economically viable resources are - are natural but not geological features since they
+   have logic that is not purely geological used to define them
 
 ## Hierarchy
 

@@ -34,7 +34,7 @@ An overview of the elements of this model is:
 <a href="../../assets/bore/Overview.svg">
 <figure id="figure-bo" markdown>
   ![](../assets/bore/Overview.svg)  
-  <figcaption>Figure Bore 2: Overview of the model of this Bores Model. The Bore class must be related to one or more Boreholes which, in turn, may have zero or more Borehole Intervals. Bores, Boreholes & Borehole Intervals are geospatial Features and may have Geometries recorded and Samples may be taken from them. Bores may be attributed to Agents (people and organisations) with the attribution qualified with Roles. A number of vocabulary-based classifiers are available for the Bore, such as Borehole Purpose, whose values are selected from controlled vocabularies listed within this Model. Some and datatype predicates are also available, such as depth.</figcaption>
+  <figcaption>Figure Bore 2: Overview of the model of this Bores Model. The Bore class must be related to one or more Boreholes which, in turn, may have zero or more Borehole Intervals. Bores, Boreholes & Borehole Intervals are geospatial Features and may have Geometries recorded and Samples may be taken from them. Bores may be attributed to Agents (people and organisations) with the attribution qualified with Roles. A number of vocabulary-based classifiers are available for the Bore, such as Borehole Purpose, whose values are selected from controlled vocabularies listed within this Model. Some datatype predicates are also available, such as depth.</figcaption>
 </figure>
 </a>
 

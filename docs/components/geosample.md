@@ -9,7 +9,10 @@ RDF: [geosample.ttl](https://github.com/Geological-Survey-of-Western-Australia/G
 </figure>
 </a>
 
-The model used for samples within this Supermodel is the [Geosamples Model](https://kurrawong.github.io/geosamples-model/model.html) which "...describes physical attributes and important relationships of geological samples". This model is limited to just describing samples themselves and their direct relationships to other object but not those other objects.
+The model used for samples within this Supermodel is the
+[Geosamples Model](https://kurrawong.github.io/geosamples-model/model.html) which "...describes physical attributes and
+important relationships of geological samples". This model is limited to just describing samples themselves and their
+direct relationships to other objects, but not those other objects themselves.
 
 ## Geosamples Model extensions
 
@@ -22,13 +25,15 @@ Within this Supermodel, the Geosamples Model is extended to allow for:
 
 Samples can be made from other Samples and any other kind of thing, such as a Bore, Site, Rock Unit etc. This is always indicated using the predicate `sosa:isSampleOf`.
 
-From the Sample's point-of-view, the thing it is a sample of is the _Feature Of Interest_, regardless of what kind of thing it is.
+From the Sample's point of view, the thing it is a sample of is the _Feature Of Interest_, regardless of what kind of
+thing it is.
 
 Furthermore, a Sample may be of another Sample and sampling chains may be of any length:
 
 _Part Sample_ `isSampleOf` _Whole Sample_ `isSampleOf` _Rock Unit_.
 
-Some models consider Bores and even Mines as _sampling features_, i.e. things that sample other things to produce samples, such as the Rock Unit the Bore is drilled in to. So we can have:
+Some models consider Bores and even Mines as _sampling features_, i.e. things that sample other things to produce
+samples, such as the Rock Unit the Bore is drilled into. So we can have:
 
 _Part Sample_ `isSampleOf` _Whole Sample_ `isSampleOf` _Bore_ `isSampleOf` _Rock Unit_.
 

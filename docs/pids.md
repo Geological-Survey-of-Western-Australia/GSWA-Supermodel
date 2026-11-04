@@ -2,23 +2,25 @@
 
 ## Overview
 
-This document provide a policy for the creation of Persistent Identifiers (PIDs) for the following cases:
+This document provides a policy for the creation of Persistent Identifiers (PIDs) for the following cases:
 
 1. **high-level definitional object**
     * models within [GSWA's Supermodel](index.md)
     * GSWA vocabularies
-    * stand-alone collections of Concepts
+    * standalone collections of Concepts
 2. **low-level definitional object**
     * Classes, Concepts, Predicates & Datatypes defined within high-level definitional objects
 3. **high-level data object**
     * datasets of content created in accordance with this Supermodel's models
 4. **low-level data object**
-    * instances of classes within high-level data object
+    * instances of classes within high-level data objects
 
 
 ## IRIs
 
-The PIDs used by the GSWA Supermodel are all [Internationalized Resource Identifiers (IRIs)](https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier) which are web page URLs that:
+The PIDs used by the GSWA Supermodel are all
+[Internationalised Resource Identifiers (IRIs)](https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier)
+which are web page URLs that:
 
 * can be used in data to identify things without necessarily resolving to a web page
 * can be managed with domain name ownership
@@ -28,7 +30,9 @@ The PIDs used by the GSWA Supermodel are all [Internationalized Resource Identif
     * similar to web address (URL) rules
     * e.g. no spaces
 
-The cases of object above _MUST_ be identified with IRI PIDs, so where something may have another kind of PID, perhaps an internal database ID, this must be treated as secondary. See [Alternate Identifiers](pids.md#alternate-identifiers) below.
+The categories of object above _MUST_ be identified with IRI PIDs, so where something may have another kind of PID,
+perhaps an internal database ID, this must be treated as secondary. See
+[Alternate Identifiers](pids.md#alternate-identifiers) below.
 
 IRIs always consist of a:
 
@@ -66,18 +70,24 @@ Some examples:
     * [Wheat Belt - South Statistical Area 3](https://linked.data.gov.au/dataset/asgsed3/SA3/50903) from the [Australian Statistical Geography Standard Linked Data API](https://asgs.linked.fsdf.org.au/dataset/asgsed3): `https://linked.data.gov.au/dataset/asgsed3/SA3/50903`
         * GSWA could indicate that administrative areas are within this region
 
-GSWA _SHOULD NOT_ reuse an existing IRI only when it is know that the IRI does not function.
+GSWA _SHOULD NOT_ reuse an existing IRI only when it is known that the IRI does not function.
 
 
 ## Alternate Identifiers
 
-The canonical form of model content and instance data created according to this Supermodel is [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) and RDf only uses IRIs for element identification.
+The canonical form of model content and instance data created according to this Supermodel is
+[RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) and RDF only uses IRIs for element identification.
 
-If a real-world or data object has another form of identifier that should be preserved, such as a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier), [IGSN](https://en.wikipedia.org/wiki/International_Generic_Sample_Number), internal database ID, lookuptable key, chemical element symbol, mineral code etc., it _MUST_ be done so linking to IRI PID.
+If a real-world or data object has another form of identifier that should be preserved, such as a
+[DOI](https://en.wikipedia.org/wiki/Digital_object_identifier),
+[IGSN](https://en.wikipedia.org/wiki/International_Generic_Sample_Number), internal database ID, lookup table key,
+chemical element symbol, mineral code etc., it _MUST_ be linked to the IRI PID.
 
 ### Creating IRIs for things with Alternate Identifiers
 
-IRIs for all objects, whether they have alternate identifiers or not, should be done in the same general way - in accordance with this document. This policy leaves open the logic used to generate the `ID` part of an `IRI` so it could be generated from an alternate identifier. Some made-up examples:
+IRIs for all objects, whether they have alternate identifiers or not, should be created in the same general way - in
+accordance with this document. This policy leaves open the logic used to generate the `ID` part of an `IRI` so it could
+be generated from an alternate identifier. Some made-up examples:
 
 * Vocabulary term of "Gold" as a Critical Mineral using the commonly known chemical element symbol `Au` for the IRI ID
     * `https://linked.data.gov.au/def/critical-minerals/au`
@@ -108,14 +118,18 @@ In the example code above, a dummy sample with IRI `https://linked.data.gov.au/d
 .
 ```
 
-The description of the datatype above gives human-readable details about what the GSWA Sample ID is, where it comes from, how it is managed and who to contact about it. It also provides validation logic - the pattern indicated by "^S(\d{4,6})$" - which mandated such an ID start with the letter 'S' which is then followed by 4 to 6 digits, e.g. S1234 or S12345. Datatyle definitions need not contain such validation logic. 
+The description of the datatype above gives human-readable details about what the GSWA Sample ID is, where it comes from,
+how it is managed and who to contact about it. It also provides validation logic - the pattern indicated by
+"^S(\d{4,6})$" - which mandates that such an ID starts with the letter 'S' which is then followed by 4 to 6 digits, e.g.
+S1234 or S12345. Datatype definitions need not contain such validation logic.
 
 
 ### DOIs, IGSNs
 
 [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier)s & [IGSN](https://en.wikipedia.org/wiki/International_Generic_Sample_Number)s often act a lot like IRIs: they have web address form and resolve online when clicked. However, they do not deliver usable Linked Data information, only web pages. For this reason, they are considered non-IRIs and should be used as alternate identifiers, not IRIs to be directly reused. 
 
-Note that while it is possible to retrieve _some_ RDF from DOIs, this is basic registry metadata and not the detailed information that a fully-functioning Linked Data IRI would deliver 
+Note that while it is possible to retrieve _some_ RDF from DOIs, this is basic registry metadata and not the detailed
+information that a fully functioning Linked Data IRI would deliver.
 
 ## Creating IRIs
 
@@ -126,7 +140,7 @@ To create an IRI, we need to consider the Case of object the IRI is for, as per 
 | Case                                  | Pattern                                                                                                                                     | Elements                                                                                                                                                                                                                                                                  |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1. **high-level definitional object** | `https://linked.data.gov.au/def/{ID}`                                                                                                       | `{ID}` - may be anything acceptable to the [Australian Government Linked Data Working Group](https://linked.data.gov.au) which means be in accordance with their [Guidelines](https://www.linked.data.gov.au/guidelines). See [Registration](pids.md#registration) below. |
-| 2. **low-level definitional object**  | `https://linked.data.gov.au/def/{ID}/{LOW-LEVEL-ID}`                                                                                        | `{ID}` - as per the requirements above <br />`{LOW-LEVEL-ID}` - distinct within scope of containing high-level object, starting upper-letter if a Class, starting lower-case letter if a Predicate                                                                        |
+| 2. **low-level definitional object**  | `https://linked.data.gov.au/def/{ID}/{LOW-LEVEL-ID}`                                                                                        | `{ID}` - as per the requirements above <br />`{LOW-LEVEL-ID}` - distinct within scope of containing high-level object, starting with an upper-case letter if a Class, starting with a lower-case letter if a Predicate                                                                        |
 | 3. **high-level data object**         | `https://linked.data.gov.au/dataset/{ID}`                                                                                                   | As per Case 1                                                                                                                                                                                                                                                             |
 | 4. **low-level definitional object**  | `https://linked.data.gov.au/dataset/{ID}/{LOW-LEVEL-ID}` or<br />`https://linked.data.gov.au/dataset/{ID}/{CLASS-SIGNIFIER}/{LOW-LEVEL-ID}` | As per Case 2 or use of an additional path element, `{CLASS-SIGNIFIER}`, to indicate the class of object as well as its individual ID.                                                                                                                                    |
 
@@ -183,4 +197,5 @@ The process is as follows:
     * if valid (resolving) the AGLDWG will mark the PID pattern _STABLE_
     * see GSWA's existing PID Patterns at the [PID Proxy Config for GSWA](https://github.com/AGLDWG/pid-proxy/blob/master/conf/linked.data.gov.au/org/gswa.conf) and the [tests for the PID Patterns](https://github.com/AGLDWG/pid-proxy/blob/master/test-suite/linked.data.gov.au/org/gswa.json)
 
-Once _STABLE_, GSWA may allocate sub-PIDs within that registered PID however they like from the AGLDWG's point-of-view. Such allocation should follow this policy's [Sub-PIDs](#sub-pids) section.
+Once _STABLE_, GSWA may allocate sub-PIDs within that registered PID however they like from the AGLDWG's point of view.
+Such allocation should follow this policy's [Sub-PIDs](#sub-pids) section.

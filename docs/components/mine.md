@@ -11,13 +11,18 @@ RDF: [mine.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-S
 </figure>
 </a>
 
-This Mines Model is a model of the physical and administrative characteristics of mines. It considers a mine to be both a geospatial object (a special type of man-made Feature) with spatial properties and relations and also a conceptual object with properties for operation such, as agents with roles like "Operator", the project that manages the mine and legislative or regulatory instrument relations, to things such as Permits.
+This Mines Model is a model of the physical and administrative characteristics of mines. It considers a mine to be both a
+geospatial object (a special type of man-made Feature) with spatial properties and relations and also a conceptual object
+with properties for operation, such as agents with roles like "Operator", the project that manages the mine and
+legislative or regulatory instrument relations, to things such as Permits.
 
 ## Modelling Principles
 
 ### Site & Mine Typing
 
-A _Site Types_ vocabulary defines the various specialised types of Site, such as _Mine_, _Infrastructure_, _Processing Plant_ etc. and, within that, there is a hierarchy of types narrower than _Mine_. Object of the class Mine in this model may onl be further typed with narrower concepts of _Mine_. 
+A _Site Types_ vocabulary defines the various specialised types of Site, such as _Mine_, _Infrastructure_, _Processing
+Plant_ etc. and, within that, there is a hierarchy of types narrower than _Mine_. Objects of the class Mine in this model
+may only be further typed with narrower concepts of _Mine_.
 
 ### Agent Relations
 
@@ -28,7 +33,10 @@ A _Site Types_ vocabulary defines the various specialised types of Site, such as
 </figure>
 </a>
 
-Agents relations - of Mines and Mine Projects to People and Organisations - follows the standards [PROV](../background.md#prov) standard [_qualified relations pattern_](https://www.w3.org/TR/prov-o/#cross-reference-qualified-terms) so Agents with relations to Mines and Projects can be indicated with Roles. See Example 1 in [Example Scnearios](#example-scenarios) below.
+Agent relations - of Mines and Mine Projects to People and Organisations - follow the [PROV](../background.md#prov)
+standard [_qualified relations pattern_](https://www.w3.org/TR/prov-o/#cross-reference-qualified-terms) so Agents with
+relations to Mines and Projects can be indicated with Roles. See Example 1 in [Example Scenarios](#example-scenarios)
+below.
 
 ### Authorities
 
@@ -39,7 +47,7 @@ Agents relations - of Mines and Mine Projects to People and Organisations - foll
 </figure>
 </a>
 
-Authorities are licenses, permits etc. that give permission or exclusivity to own/operate Mines in designated areas.
+Authorities are licences, permits etc. that give permission or exclusivity to own/operate Mines in designated areas.
 
 Authority modelling itself is not directly handled in this model (see the [Authorities Component Model](../components/mining-authorisation) for that) however common authorities associated with Mines and Projects are shown here.
 
@@ -58,7 +66,8 @@ Commodities are properties of interest within Mines and other Man-made as well a
 
 ### Example 1: A Mine with an Operator and Authority 
 
-The following example uses both the un-qualified and qualified relations for a fictitious Mine & Tenement. The pattern will also work for Lease and other forns of Authority.
+The following example uses both the unqualified and qualified relations for a fictitious Mine & Tenement. The pattern
+will also work for Leases and other forms of Authority.
 
 <a href="../../assets/mines-EX.1.svg">
 <figure id="figure-bh" markdown style="width:50%">
@@ -114,7 +123,7 @@ Vocabularies supporting this model and the positions within the model they occup
 
 **Vocabulary** | **Description** | **Model Position**
 --- | --- | ---
-Agent Roles<br /><br />_Not developed yet_ | The roles that Agents play with respect to Sites, Authorities & one another | Range value for `prov:hadRole` predicate used `prov:Attribution` instance
+Agent Roles<br /><br />_Not developed yet_ | The roles that Agents play with respect to Sites, Authorities & one another | Range value for `prov:hadRole` predicate used on a `prov:Attribution` instance
 Site Types<br /><br />_Not developed yet_ | Fine-grained types of Site | Range value for `sdo:additionalType` predicate used on `Mine` (`Site`) instances
 Site Operational Statuses<br /><br />_Not developed yet_ | The status of a Site's operations | Range value for `hasOperatingStatus` predicate used on `Mine` (`Site`) instances
 Project Status<br /><br />_Not developed yet_ | The status of a Project | Range value for `hasProjectStatus` predicate used on `Project` instances

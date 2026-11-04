@@ -6,7 +6,7 @@ Please see the model documentation online at:
 
 * <https://geological-survey-of-western-australia.github.io/GSWA-Supermodel/>
 
-## License & Rights
+## Licence & Rights
 
 This repository's content is available for reuse according to the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 

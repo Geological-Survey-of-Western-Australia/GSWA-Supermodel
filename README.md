@@ -32,13 +32,22 @@ _Contractor to GSWA_
 
 ### Documentation 
 
-This repository uses the [MkDocs](https://www.mkdocs.org/) tool to build a static website - just HTML pages, no database etc. - from simple [Markdown](https://www.markdownguide.org/) text files and images stored in the `docs/` folder which is published online via GitHub's Pages system.
+This repository uses [Zensical](https://zensical.org/) to build a static website from
+[Markdown](https://www.markdownguide.org/) files and images in `docs/`. GitHub Pages hosts the generated site.
 
-MkDocs uses [Python](https://www.python.org/) scripting to compile the Markdown files, images etc. into HTML. It can be run locally - on a desktop/laptop - to test documentation changes, and pushed to GitHub to be auto-deployed.
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) to manage Python and project dependencies.
+Run these commands from the repository root; uv installs the Python version recorded in `.python-version` when needed:
 
-To serve this content as a static site locally, run:
+```sh
+uv sync --locked
+uv run zensical serve
+```
 
-`mkdocs serve`
+To build the site locally, run `uv run --locked zensical build --clean`. Configuration is in `zensical.toml`, and
+generated files are written to `site/`.
+
+Push changes to `main` to build and deploy automatically through `.github/workflows/deploy.yml`, or run the workflow
+manually from GitHub Actions. CI installs dependencies from `uv.lock` using `uv sync --locked`.
 
 ### Data
 

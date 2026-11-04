@@ -1,2 +1,5 @@
 .idea
 .venv
+site/
+.cache/
+.DS_Store

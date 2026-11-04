@@ -1,8 +1,8 @@
 [project]
 name = "gswa-supermodel"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
-authors = [{ name = "Nicholas Car", email = "nick@kurrawong.net" }]
+authors = [{ name = "Nicholas Car", email = "nick@kurrawong.ai" }]
 requires-python = ">=3.15,<3.16"
 classifiers = ["Programming Language :: Python :: 3", "Programming Language :: Python :: 3.15"]
 dependencies = [

@@ -4,7 +4,7 @@ RDF: [mining-authorisation.ttl](https://github.com/Geological-Survey-of-Western-
 
 ## Overview
 
-<a href="../../assets/authorities-Overview.svg">
+<a href="../assets/authorities-Overview.svg">
 <figure id="figure-bh" markdown>
   ![](../assets/authorities-Overview.svg)
   <figcaption>Figure AO: Mining Authorisation Model overview</figcaption>

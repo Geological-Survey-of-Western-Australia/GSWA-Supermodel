@@ -12,20 +12,20 @@ exploitation potential and restricts its modelling to the _occurrence_ part only
 Expected use of this model is to characterise the spatial presence of identified observable properties of parts of the
 Earth's crust and then for external modelling to establish the exploitation potential.
 
-The figure below places ROs within a Features class hierarchy.
+The key for the figure above and other figures in this model is below.
 
-<a href="../../assets/resource-occurrence/Key.svg">
+<a href="../assets/resource-occurrence/key.svg">
 <figure id="figure-bh" markdown style="width:20%">
-  ![](../assets/resource-occurrence/Key.svg)
+  ![](../assets/resource-occurrence/key.svg)
   <figcaption>Figure ROK: Key for this Model's element figures</figcaption>
 </figure>
 </a>
 
-The Key for the figure above and other figures in this model is below.
+The figure below places ROs within a Features class hierarchy.
 
-<a href="../../assets/features-hierarchy/Hierarchy.svg">
-<figure id="figure-gfh" markdown style="width:80%">
-  ![](../assets/features-hierarchy/Hierarchy.svg)
+<a href="../assets/geofh/n-hierarchy.svg">
+<figure id="figure-gfh" markdown>
+  ![](../assets/geofh/n-hierarchy.svg)
   <figcaption>Figure ROH: A Feature class hierarchy within which this Model's elements exist</figcaption>
 </figure>
 </a>
@@ -36,7 +36,7 @@ An RO is not necessarily a natural feature - it could be a tailings mound - so R
 
 What is the RO an occurrence of? Likely some geological or natural property, such as a concentration of gold or reservoir of oil. Whatever it is, it is to be indicated by a link from the RO to the description of the property which should be recorded in a controlled vocabulary. This is indicated in the figure below. 
 
-<a href="../../assets/resource-occurrence/Overview.svg">
+<a href="../assets/resource-occurrence/Overview.svg">
 <figure id="figure-bh" markdown style="width:50%">
   ![](../assets/resource-occurrence/Overview.svg)
   <figcaption>Figure ROO: Overview of this Model</figcaption>
@@ -58,7 +58,7 @@ All spatial modelling options listed above are standard options available for an
 
 A Resource Occurrence of gold indicated with a fuzzy polygon.
 
-<a href="../../assets/resource-occurrence/Example.svg">
+<a href="../assets/resource-occurrence/Example.svg">
 <figure id="figure-bh" markdown style="width:50%">
   ![](../assets/resource-occurrence/Example.svg)
   <figcaption>Figure ROE: A Resource Occurrence of gold indicated with a fuzzy polygon</figcaption>

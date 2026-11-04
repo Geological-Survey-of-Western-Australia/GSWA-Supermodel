@@ -22,7 +22,7 @@ This model only introduces two novel classes at the highest level:
 * `Geological Property`
     *  An observable quality (property, characteristic) of a Geological `Feature`
 
-Specialised parts of the total modelling regime within this Supermodel are handled by _Component Models_, not this Backbone Model. For example, specialised types of man-made `Feature` are defined in the [Sites & Admin Features](components/sites-admin.md) component model.
+Specialised parts of the total modelling regime within this Supermodel are handled by _Component Models_, not this Backbone Model. For example, specialised types of man-made `Feature` are defined in the [Geo Features Hierarchy](components/geofh.md) component model.
 
 ### Examples
 
@@ -73,7 +73,7 @@ This can be summarised like this:
 
 1. The _Backbone Model_ is a profile of [SOSA](background.md#sosa), [GeoSPARQL](background.md#geosparql),
    [ANZGeoDCAT](background.md#anzgeodcat) & [VocPub](background.md#vocpub) and, through them, [DCAT](background.md#dcat),
-   [SKOS](background.md#skos). All of these are, in turn, profiles of [OWL](background.md#owl)
+   [SKOS](background.md#skos). All of these are, in turn, profiles of [OWL](background.md#web-ontology-language-owl)
     1. see the figure below
 2. It contains multiple profile resources:
     1. see the table below

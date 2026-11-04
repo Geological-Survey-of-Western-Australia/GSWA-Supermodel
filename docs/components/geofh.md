@@ -2,7 +2,7 @@
 
 RDF: [geofh.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/geofh.ttl)
 
-<a href="../../assets/geofh/hierarchy.svg">
+<a href="../assets/geofh/hierarchy.svg">
 <figure id="figure-gfh" markdown style="width:70%">
   ![](../assets/geofh/hierarchy.svg)
   <figcaption>Figure GFH: The top 3 levels of this model's class hierarchy</figcaption>
@@ -63,14 +63,14 @@ The hierarchy of feature types - classes of feature - is:
     * Non-Geological Feature
       * Resource Occurrence
 
-<a href="../../assets/geofh/mm-hierarchy.svg">
+<a href="../assets/geofh/mm-hierarchy.svg">
 <figure id="figure-gfh" markdown style="width:80%">
   ![](../assets/geofh/mm-hierarchy.svg)
   <figcaption>Figure MMGFH: Man-made Feature types</figcaption>
 </figure>
 </a>
 
-<a href="../../assets/geofh/n-hierarchy.svg">
+<a href="../assets/geofh/n-hierarchy.svg">
 <figure id="figure-gfh" markdown style="width:100%">
   ![](../assets/geofh/n-hierarchy.svg)
   <figcaption>Figure NGFH: Natural Feature types</figcaption>

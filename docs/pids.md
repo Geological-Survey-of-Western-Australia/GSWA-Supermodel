@@ -15,7 +15,6 @@ This document provides a policy for the creation of Persistent Identifiers (PIDs
 4. **low-level data object**
     * instances of classes within high-level data objects
 
-
 ## IRIs
 
 The PIDs used by the GSWA Supermodel are all
@@ -47,7 +46,6 @@ IRIs always consist of a:
     * individual object identifier - last part of the path
     * from above, 'x'
 
-
 ## Namespaces
 
 The namespace, or basis, to be used for all cases above is the _authority_:
@@ -55,7 +53,6 @@ The namespace, or basis, to be used for all cases above is the _authority_:
 `https://linked.data.gov.au/`
 
 This namespace is managed by the [Australian Government Linked Data Working Group](https://linked.data.gov.au) on behalf of all Australian governments and is intended to provide persistent identifiers for all Australian government-relevant [Linked Data](https://www.w3.org/wiki/LinkedData). GSWA has registered identifiers for the cases above and is required to keep doing so for new items. See the [Registration](pids.md#registration) section below for more details. 
-
 
 ## Reusing Existing IRIs
 
@@ -71,7 +68,6 @@ Some examples:
         * GSWA could indicate that administrative areas are within this region
 
 GSWA _SHOULD NOT_ reuse an existing IRI only when it is known that the IRI does not function.
-
 
 ## Alternate Identifiers
 
@@ -123,7 +119,6 @@ how it is managed and who to contact about it. It also provides validation logic
 "^S(\d{4,6})$" - which mandates that such an ID starts with the letter 'S' which is then followed by 4 to 6 digits, e.g.
 S1234 or S12345. Datatype definitions need not contain such validation logic.
 
-
 ### DOIs, IGSNs
 
 [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier)s & [IGSN](https://en.wikipedia.org/wiki/International_Generic_Sample_Number)s often act a lot like IRIs: they have web address form and resolve online when clicked. However, they do not deliver usable Linked Data information, only web pages. For this reason, they are considered non-IRIs and should be used as alternate identifiers, not IRIs to be directly reused. 
@@ -142,7 +137,7 @@ To create an IRI, we need to consider the Case of object the IRI is for, as per 
 | 1. **high-level definitional object** | `https://linked.data.gov.au/def/{ID}`                                                                                                       | `{ID}` - may be anything acceptable to the [Australian Government Linked Data Working Group](https://linked.data.gov.au) which means be in accordance with their [Guidelines](https://www.linked.data.gov.au/guidelines). See [Registration](pids.md#registration) below. |
 | 2. **low-level definitional object**  | `https://linked.data.gov.au/def/{ID}/{LOW-LEVEL-ID}`                                                                                        | `{ID}` - as per the requirements above <br />`{LOW-LEVEL-ID}` - distinct within scope of containing high-level object, starting with an upper-case letter if a Class, starting with a lower-case letter if a Predicate                                                                        |
 | 3. **high-level data object**         | `https://linked.data.gov.au/dataset/{ID}`                                                                                                   | As per Case 1                                                                                                                                                                                                                                                             |
-| 4. **low-level definitional object**  | `https://linked.data.gov.au/dataset/{ID}/{LOW-LEVEL-ID}` or<br />`https://linked.data.gov.au/dataset/{ID}/{CLASS-SIGNIFIER}/{LOW-LEVEL-ID}` | As per Case 2 or use of an additional path element, `{CLASS-SIGNIFIER}`, to indicate the class of object as well as its individual ID.                                                                                                                                    |
+| 4. **low-level data object**  | `https://linked.data.gov.au/dataset/{ID}/{LOW-LEVEL-ID}` or<br />`https://linked.data.gov.au/dataset/{ID}/{CLASS-SIGNIFIER}/{LOW-LEVEL-ID}` | As per Case 2 or use of an additional path element, `{CLASS-SIGNIFIER}`, to indicate the class of object as well as its individual ID.                                                                                                                                    |
 
 #### Classes per Case
 
@@ -179,7 +174,6 @@ Agents - Organisations and People - have a couple of special considerations. Whe
     * personal IDs for researchers
     * reuse if the person has an ID there
 
-
 ## Registration
 
 The process for registering a `linked.data.gov.au`-based PID is to request a new one from the Australian Government Linked Data Working Group via their catalogue system at <https://catalogue.linked.data.gov.au>.
@@ -198,4 +192,4 @@ The process is as follows:
     * see GSWA's existing PID Patterns at the [PID Proxy Config for GSWA](https://github.com/AGLDWG/pid-proxy/blob/master/conf/linked.data.gov.au/org/gswa.conf) and the [tests for the PID Patterns](https://github.com/AGLDWG/pid-proxy/blob/master/test-suite/linked.data.gov.au/org/gswa.json)
 
 Once _STABLE_, GSWA may allocate sub-PIDs within that registered PID however they like from the AGLDWG's point of view.
-Such allocation should follow this policy's [Sub-PIDs](#sub-pids) section.
+Such allocation should follow this policy's _low-level_ definitional and data object directives.

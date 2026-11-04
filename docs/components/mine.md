@@ -4,7 +4,7 @@ RDF: [mine.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-S
 
 ## Overview
 
-<a href="../../assets/mines-Overview.svg">
+<a href="../assets/mines-Overview.svg">
 <figure id="figure-bh" markdown style="width:100%">
   ![](../assets/mines-Overview.svg)
   <figcaption>Figure MO: Overview of this Mines Model</figcaption>
@@ -26,7 +26,7 @@ may only be further typed with narrower concepts of _Mine_.
 
 ### Agent Relations
 
-<a href="../../assets/mines-Agents.svg">
+<a href="../assets/mines-Agents.svg">
 <figure id="figure-bh" markdown style="width:50%">
   ![](../assets/mines-Agents.svg)
   <figcaption>Figure MAg: Mines Model Agent relations - general pattern</figcaption>
@@ -40,7 +40,7 @@ below.
 
 ### Authorities
 
-<a href="../../assets/mines-Authorities.svg">
+<a href="../assets/mines-Authorities.svg">
 <figure id="figure-bh" markdown style="width:70%">
   ![](../assets/mines-Authorities.svg)
   <figcaption>Figure MA: Mines Authorities</figcaption>
@@ -49,11 +49,13 @@ below.
 
 Authorities are licences, permits etc. that give permission or exclusivity to own/operate Mines in designated areas.
 
-Authority modelling itself is not directly handled in this model (see the [Authorities Component Model](../components/mining-authorisation) for that) however common authorities associated with Mines and Projects are shown here.
+Authority modelling itself is not directly handled in this model (see the
+[Authorities Component Model](mining-authorisation.md) for that) however common authorities associated with Mines and
+Projects are shown here.
 
 ### Commodities
 
-<a href="../../assets/mines-Commodities.svg">
+<a href="../assets/mines-Commodities.svg">
 <figure id="figure-bh" markdown style="width:60%">
   ![](../assets/mines-Commodities.svg)
   <figcaption>Figure MC: Mines Commodities</figcaption>
@@ -69,7 +71,7 @@ Commodities are properties of interest within Mines and other Man-made as well a
 The following example uses both the unqualified and qualified relations for a fictitious Mine & Tenement. The pattern
 will also work for Leases and other forms of Authority.
 
-<a href="../../assets/mines-EX.1.svg">
+<a href="../assets/mines-EX.1.svg">
 <figure id="figure-bh" markdown style="width:50%">
   ![](../assets/mines-EX.1.svg)
   <figcaption>Figure EX.1: Mine X is operated by Company Y which is part of Consortium N that holds the Tenement Z</figcaption>

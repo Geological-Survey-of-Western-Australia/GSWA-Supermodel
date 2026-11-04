@@ -1,6 +1,6 @@
 # Background Models
 
-Background Models are models that this Supermodel's [Backbone Model](backbone.md) and [Component Models](components/index) profile (inherit from).
+Background Models are models that this Supermodel's [Backbone Model](backbone.md) and [Component Models](components/index.md) profile (inherit from).
 
 Background Models may not be directly referred to by data created according to the Backbone or Component Models, however all data made to conform to this Supermodel _must_ conform to all the Background Models.
 
@@ -8,7 +8,7 @@ Background Models may not be directly referred to by data created according to t
 
 The Background Models are inherited from by the Background Model, and thus the Component Models that inherit from it, in a hierarchical manner, as per the following diagram:
 
-<a href="../assets/profiles-hierarchy.svg">
+<a href="assets/profiles-hierarchy.svg">
 <figure markdown>
   ![](assets/profiles-hierarchy.svg)  
   <figcaption>Figure BP: The Standards profiled by this Backbone Model</figcaption>
@@ -26,9 +26,10 @@ following section.
 
 "GeoSciML is a model of geological features commonly described and portrayed in geological maps, cross sections, geological reports and databases."
 
-This Supermodel uses GeoSciML indirectly: since GeoSciML is not a [Web Ontology Language](#owl)-based model, this
-Supermodel profiles GeoSciML by interpreting parts of its conceptual model into OWL Logical Models, such as the
-[Borehole Model](components/boreholes.md).
+This Supermodel uses GeoSciML indirectly: since GeoSciML is not a
+[Web Ontology Language](#web-ontology-language-owl)-based model, this Supermodel profiles GeoSciML by interpreting
+parts of its conceptual model into OWL Logical Models, such as the
+[Borehole Model](components/bore.md).
 
 
 ### FSDF Backbone Model	

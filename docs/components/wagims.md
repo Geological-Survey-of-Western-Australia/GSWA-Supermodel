@@ -1,0 +1,1 @@
+# WAGIMS Component Model

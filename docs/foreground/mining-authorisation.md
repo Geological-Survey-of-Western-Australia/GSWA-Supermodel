@@ -1,6 +1,6 @@
 # Mining Authorisation Model
 
-RDF: [mining-authorisation.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/mining-authorisation.ttl)
+RDF: [mining-authorisation.ttl](../rdf/foreground/mining-authorisation.ttl)
 
 ## Overview
 

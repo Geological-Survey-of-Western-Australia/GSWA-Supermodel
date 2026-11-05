@@ -1,6 +1,6 @@
 # Resource Occurrence Model
 
-RDF: [resources-occurrence.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/resources-occurrence.ttl)
+RDF: [resource-occurence.ttl](../rdf/foreground/resource-occurence.ttl)
 
 ## Overview 
 

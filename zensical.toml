@@ -1,20 +1,21 @@
 [project]
 site_name = "GSWA Supermodel"
 site_url = "https://geological-survey-of-western-australia.github.io/GSWA-Supermodel/"
-copyright = "Copyright &copy; Government of Western Australia (Department of Mines, Industry Regulation and Safety), 2022"
 extra_css = ["stylesheets/extra.css"]
 nav = [
     "index.md",
+    { "Foreground Models" = [
+        "foreground.md",
+        { "GeoFeatures Hierarchy" = "foreground/geofh.md" },
+        { "Bore" = "foreground/bore.md" },
+        { "Mine" = "foreground/mine.md" },
+        { "Mining Authorisation" = "foreground/mining-authorisation.md" },
+        { "Geosample" = "foreground/geosample.md" },
+        { "Resource Occurrence" = "foreground/resource-occurrence.md" },
+    ] },
     "background.md",
-    "backbone.md",
     { "Component Models" = [
         "components/index.md",
-        { "GeoFeatures Hierarchy" = "components/geofh.md" },
-        { "Bore" = "components/bore.md" },
-        { "Mine" = "components/mine.md" },
-        { "Mining Authorisation" = "components/mining-authorisation.md" },
-        { "Resource Occurrence" = "components/resource-occurrence.md" },
-        { "Geosample" = "components/geosample.md" },
     ] },
     "vocabularies.md",
     "pids.md",
@@ -26,7 +27,7 @@ generator = false
 [project.theme]
 variant = "classic"
 favicon = "assets/favicon.png"
-logo = "assets/classes-icon.svg"
+custom_dir = "overrides"
 features = ["navigation.indexes", "toc.follow"]
 
 [project.theme.palette]

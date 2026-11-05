@@ -1,0 +1,1 @@
+# WAROX Component Model

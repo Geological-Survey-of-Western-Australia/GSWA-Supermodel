@@ -1,8 +1,8 @@
 # Background Models
 
-Background Models are models that this Supermodel's [Backbone Model](backbone.md) and [Component Models](components/index.md) profile (inherit from).
+Background Models are models that this Supermodel's [Foreground Models](foreground.md) and [Component Models](components/index.md) inherit from.
 
-Background Models may not be directly referred to by data created according to the Backbone or Component Models, however all data made to conform to this Supermodel _must_ conform to all the Background Models.
+Background Models may or may not be directly referred to by data created according to the Foreground or Component Models, however they and thus all data made conforming to this Supermodel _MUST_ conform to all the Background Models.
 
 ## Profile Hierarchy
 
@@ -29,7 +29,7 @@ following section.
 This Supermodel uses GeoSciML indirectly: since GeoSciML is not a
 [Web Ontology Language](#web-ontology-language-owl)-based model, this Supermodel profiles GeoSciML by interpreting
 parts of its conceptual model into OWL Logical Models, such as the
-[Borehole Model](components/bore.md).
+[Borehole Model](foreground/bore.md).
 
 
 ### FSDF Backbone Model	

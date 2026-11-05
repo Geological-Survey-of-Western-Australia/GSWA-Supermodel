@@ -2,13 +2,13 @@
 
 ## Overview
 
-This is a documentation website for a Supermodel: a multi-part enterprise data model.
+This is a documentation website for the [Geological Survey of Western Australia](https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx)'s enterprise data mode.
 
-This particular Supermodel is for a public expression of the data holdings of the [Geological Survey of Western Australia](https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx).
+This enterprise data model is known as a 'Supermodel' and it contains multiple dataset/system models. It is built following a formulaic creation of a multipart model.
 
 | Question                               | Answer                                                                                                                     |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| What is a Supermodel, in detail?       | See the next few sections<br />See the [generic description of a Supermodel](https://linked.data.gov.au/def/supermodel)    |
+| What is a Supermodel, in detail?       | See the next few sections<br />See the [Supermodel definition](https://linked.data.gov.au/def/supermodel)    |
 | What is the status of this Supermodel? | See [Status](#status) below                                                                                                |
 | What other Supermodels?                | See the [Related Supermodels](#related-supermodels) section of [this Supermodel's description](index.md) |
 
@@ -37,11 +37,13 @@ This Supermodel relates to several other Supermodels. The table below gives some
 
 | Supermodel                                                                                       | Relationship                                                                                                                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [International Stratigraphic Commission's Supermodel](https://stratigraphy.org/data-models) | An enterprise data model for the international stratigraphy domain, managed by the authoraititive scientific body. Parts of this Supermodel, e.g. the [Stratigraphic Chart dataset](https://stratigraphy.org/chart), are reused directly by the GSWA Supermodel
+| [Geological Survey of Queensland's Supermodel](https://geological-survey-of-queensland.github.io/gsq-supermodel/) | Created for the same purpose as the GSWA Supermodel, for Queensland's Geologicla Survey
 | [Foundational Spatial Data Framework Supermodel](https://linked.data.gov.au/def/fsdf-supermodel) | The FSDF Supermodel was created by [Geoscience Australia](https://www.ga.gov.au) to integrate multiple foundational spatial datasets within Australia. It specifies both a structure for spatial data and particular fundamental objects to join datasets with, such as authoritative boundaries for Australia and the states.<br /><br />This supermodel adopts the FSDF Supermodel ways of working for spatial data |
-| Geological Survey of Queensland's Supermodel                                                     | A Supermodel for a similar agency to GSWA. It implements many of the same Background Models, Vocabularies and some of the same Component Models, such as [Boreholes](components/bore.md)                                                                                                                                                                                                              |
-| Environmental Information Australia Supermodel                                                   | An emerging Supermodel that includes a series of national environmental datasets across several Federal government agencies. It shares many background models that cover sampling, sites, spatiality, projects etc.                                                                                                                                                                                                   |
+| [Queensland's Spatial Data Supermodel](https://linked.data.gov.au/def/qsi-supermodel)                                               | A For joining multiple fundamental state spatial datasets. It implements many of the same Background Models, Vocabularies and some of the same Component Models, such as [Boreholes](foreground/bore.md)                                                                                                                                                                                                              |
+| [Environmental Information Australia Supermodel](https://linked.data.gov.au/def/qsi-supermodel)                                                   | An emerging Supermodel that includes a series of national environmental datasets across several Federal government agencies. It shares many background models that cover sampling, sites, spatiality, projects etc.                                                                                                                                                                                                   |
 
-## Supermodel Structure
+### Supermodel Structure
 
 The structure of this Supermodel follows the [Supermodel Model](https://linked.data.gov.au/def/supermodel) and consists of:
 
@@ -61,8 +63,7 @@ Additionally, this Supermodel contains the following model support content:
 * [PID Policy](pids)
     * a policy for the creation of Persistent Identifiers (PIDs) for all the models within this Supermodel and any data created to conform to these models
 
-
-## Technical Assets
+### Technical Assets
 
 All parts of this Supermodel, for example individual Component Models or supporting vocabularies, are outlined here in
 human-readable form (documentation) and their machine-readable forms, such as their schemas and data validators, are
@@ -71,19 +72,19 @@ linked to as well.
 Within the formal definition of this Supermodel, all the 'resources' of the Supermodel parts are listed and the roles
 that each play are given. See the [Supermodel Definition](#supermodel-definition).
 
-## Supermodel Definition
+### Supermodel Definition
 
 The machine-readable definition of this Supermodel is a Turtle file, online at:
 
-* <https://linked.data.gov.au/def/gswa-supermodel.ttl>
+* [profile.ttl](rdf/profile.ttl)
 
 Its content is rendered in human-readable form as follows:
 
 | Resource                                                                    | Role                                                                         | Description                                                                                             |
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [Supermodel Definition](https://linked.data.gov.au/def/gswa-supermodel.ttl) | [Profile](https://www.w3.org/TR/dx-prof/#Class:Profile)                      | The formal definition of this Supermodel, including all its parts                                       |
+| [Supermodel Definition](rdf/profile.ttl) | [Profile](https://www.w3.org/TR/dx-prof/#Class:Profile)                      | The formal definition of this Supermodel, including all its parts                                       |
 | **Component Models**                                                        |                                                                              |
-| [Bore Model](components/bore.md)                                            | [Component Model](https://linked.data.gov.au/def/supermodel/component-model) | A model that describes physical, functional and operational aspects of Bores, sometimes known as Wells. |                                                                   
+| [Bore Model](foreground/bore.md)                                            | [Component Model](https://linked.data.gov.au/def/supermodel/component-model) | A model that describes physical, functional and operational aspects of Bores, sometimes known as Wells. |                                                                   
 | **Background Models**                                                       |                                                                              |
 | **Vocabularies**                                                            |                                                                              |
 
@@ -91,12 +92,21 @@ Its content is rendered in human-readable form as follows:
 
 The following subsections apply to all models linked to and within this Supermodel.
 
+### Definitions
+
+| Term             | Meaning                                                                                                                                                                                                                                                                     |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Foreground Model** | Any model that you can expect to create data according to. Component Models are Foreground Models but there are other Foreground Models which to not correspond directly to a spcific system, such as the [Bore Model](foreground/bore.md) which is used by multiple system |
+| **Background Model** | A generic model that Foreground and Component models extend. Bakcground Modles msy be used directly or indirectly, through these extending models                                                                                                                           |
+| **Component Model**  | A Foreground Model that corresponds to a data system. For example WAROX, GSWA's  field observation sites and information database has a model of its content, the [WAROX Foreground Model](components/warox.md).                                                            |
+| **Profile** | A Profile is a model that substantially inherites from one or more other models. It may not even declare any new elements but only contrain the use of existing model celements
+
 ### Diagram Conventions
 
 All the models within this Supermodel are visualised with informal OWL diagrams. These are diagrams that represent the Classes, Properties and Axioms of the [Web Ontology Language](background.md#web-ontology-language-owl) with the elements shown in Figure K below.
 
 <figure markdown>
-  ![](assets/key.svg)
+  ![](assets/key.svg){ width="75%" }
   <figcaption>Figure K: OWL Diagram Element Key</figcaption>
 </figure>
 
@@ -111,7 +121,7 @@ The following prefixed namespaces are used in class and property definition tabl
 | **Prefix** | **Namespace**                           | **Description**                                                                                                                |
 |------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | `ex`       | `http://example.com/`                   | Non-resolvable namespace for examples                                                                                          |
-| `bore`     | `https://linked.data.gov.au/def/bore/`  | The namespace for the [Bore Model](components/bore.md)                                                                         |
+| `bore`     | `https://linked.data.gov.au/def/bore/`  | The namespace for the [Bore Model](foreground/bore.md)                                                                         |
 | `dcat`     | `http://www.w3.org/ns/dcat#`            | [Data Catalogue vocabulary](https://www.w3.org/TR/vocab-dcat/): cataloguing international standard                             |
 | `dcterms`  | `http://purl.org/dc/terms/`             | [Dublin Core Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/): basic library catalogue-style metadata |
 | `geo`      | `http://www.opengis.net/ont/geosparql#` | [GeoSPARQL](https://docs.ogc.org/is/22-047r1/22-047r1.html): Semantic Web spatial data international standard                  |
@@ -123,7 +133,7 @@ The following prefixed namespaces are used in class and property definition tabl
 
 These namespaces appear at the start of RDF data files in the [Turtle](https://www.w3.org/TR/turtle/) format (see next
 subsection) and SPARQL query text (the section after the next section) in a form similar to this table, for example in
-the schema for the [Bore Model](components/bore.md) you can see the prefix `bore` for its namespace on the first line:
+the schema for the [Bore Model](foreground/bore.md) you can see the prefix `bore` for its namespace on the first line:
 
 * `PREFIX bore: <https://linked.data.gov.au/def/bore/>`
 
@@ -144,7 +154,7 @@ ex:b-01
 .
 ```
 
-In the example above (from the [Bore Model](components/bore.md)'s `Quantitative Value` class), we have a dummy ID for an instance of a `Bore` - `ex:b-01` - with its class indicated - `ex:b-01 a bore:Bore` - and its depth given as a nested object, indicated by the _predicate_ `schema:depth`:
+In the example above (from the [Bore Model](foreground/bore.md)'s `Quantitative Value` class), we have a dummy ID for an instance of a `Bore` - `ex:b-01` - with its class indicated - `ex:b-01 a bore:Bore` - and its depth given as a nested object, indicated by the _predicate_ `schema:depth`:
 
 ```turtle
 [
@@ -217,16 +227,17 @@ WHERE {
 
 The above query will extract objects of class Bore - `?bh a bore:Bore` - with location of `ex:Plibara` and depth greater than 100. The result will be the ID of `ex:b-02`.
 
+### Persistent Identifiers
+
+See the dedicated page: [Persistent Identifiers](/pids).
+
 ## Status
 
-**October 2025**
+**November 2026**
 
-As of October 2025, this supermodel is partially deployed within GSWA's proto-production Knowledge Graph which feeds the Discovery Portal, due for an updated release in November 2025. 
+As of November 2026, data from multiple GSWA datasets/systems is converted into the RDF data format and aligned with the models within this supermodel. The converted data is then aggregated into the GSWA Knowledge Graph which feeds the GSWA Discovery Portal, due for an public release in early December 2026. 
 
-The specialised dataset models for GSWA's WAROX, MINEDEX, DRILLHOLES etc. databases are continuing to be further aligned with this Supermodel's Component Models however most of the major classes, such as `sosa:Sample`, `bore:Bore` etc. have already been implemented and this leads to tight integration, e.g. objects of type `Bore` can be selected in a single Knowledge Graph query from both DRILLHOLES and WAROX.
-
-Vocabularies in GSWA's [vocabulary server](https://vocabulary.gswa.kurrawong.ai/) are also continually being folded into this Supermodel, for example the use of [GSWA's _Borehole Status_ vocab](https://linked.data.gov.au/def/borehole-status-wa) within the [Bore Model](components/bore.md). 
-
+Data from GSWA's long-standing but siloed datasets of WAROX, MINEDEX, DRILLHOLES etc. are aligned with this Supermodel's Component Models, using major classes, such as `sosa:Sample`, `bore:Bore` etc. GSWA has also published many vocabularies in their [vocabulary server](https://vocabulary.gswa.kurrawong.ai/), all of which are constituted according to this Supermodel's background models fro vocabularies.
 
 ## Licence & Rights
 
@@ -234,7 +245,7 @@ This repository's content is available for reuse according to the [Creative Comm
 
 This content is copyright as follows:
 
-<div style="text-align:center;"><em>&copy; Government of Western Australia (Department of Mines, Industry Regulation and Safety), 2024</em></div>
+<div style="text-align:center;"><em>&copy; Government of Western Australia (Department of Mines, Industry Regulation and Safety), 2026</em></div>
 
 ## Contacts
 
@@ -243,7 +254,7 @@ This Supermodel is being authored for the [Geological Survey of Western Australi
 For technical matters, please contact:
 
 **Nicholas Car**  
-_Geoscience Data Architect_  
+_Coonsultant Data Architect_  
 Geological Survey of WA  
 Department of Mines, Industry Regulation and Safety  
 <nick.car@dmirs.wa.gov.au>  

@@ -25,9 +25,9 @@ referred to from here. The table below lists the current Component Models.
 
 | **Model**                                                     | **Domain(s)**                                        | **Persistent Identifier**             | **Notes**                                                        |
 |---------------------------------------------------------------|------------------------------------------------------|---------------------------------------|------------------------------------------------------------------|
-| [Geo Features Hierarchy](geofh.md)                | geospatial features                                  | `https://linked.data.gov.au/def/geofh`  |                                                        |
-| [Bore Model](bore.md)                                            | bores, boreholes, wells etc                          | `https://linked.data.gov.au/def/bore` | child model of [GeoF](geofh.md).    |
-| [Mine Model](mine.md)                                            | mines                                                | `https://linked.data.gov.au/def/mine` | child model of [GeoF](geofh.md).    |
-| [Mining Authorisation Model](mining-authorisation.md) | tenements, permits, licences etc., to do with mining | `https://linked.data.gov.au/def/xxx`  | child model of [GeoF](geofh.md).    |
-| [Geosample Model](geosample.md)                                  | samples, sampling                                    | `https://linked.data.gov.au/def/xxx`  | Coming...                                                        |
-| [Resource Occurrence Model](resource-occurrence.md)              | spatial position and values of resources             | `https://linked.data.gov.au/def/xxx`  | child model of [GeoF](geofh.md)       |
+| [Geo Features Hierarchy](../foreground/geofh.md)                | geospatial features                                  | `https://linked.data.gov.au/def/geofh`  |                                                        |
+| [Bore Model](../foreground/bore.md)                                            | bores, boreholes, wells etc                          | `https://linked.data.gov.au/def/bore` | child model of [GeoF](../foreground/geofh.md).    |
+| [Mine Model](../foreground/mine.md)                                            | mines                                                | `https://linked.data.gov.au/def/mine` | child model of [GeoF](../foreground/geofh.md).    |
+| [Mining Authorisation Model](../foreground/mining-authorisation.md) | tenements, permits, licences etc., to do with mining | `https://linked.data.gov.au/def/xxx`  | child model of [GeoF](../foreground/geofh.md).    |
+| [Geosample Model](../foreground/geosample.md)                                  | samples, sampling                                    | `https://linked.data.gov.au/def/xxx`  | Coming...                                                        |
+| [Resource Occurrence Model](../foreground/resource-occurrence.md)              | spatial position and values of resources             | `https://linked.data.gov.au/def/xxx`  | child model of [GeoF](../foreground/geofh.md)       |

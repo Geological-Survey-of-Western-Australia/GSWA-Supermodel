@@ -1,6 +1,6 @@
 [project]
 name = "gswa-supermodel"
-version = "1.0.1"
+version = "1.0.2"
 description = ""
 authors = [{ name = "Nicholas Car", email = "nick@kurrawong.ai" }]
 requires-python = ">=3.15,<3.16"

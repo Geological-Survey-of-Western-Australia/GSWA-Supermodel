@@ -1,6 +1,6 @@
 # Geo Features Hierarchy
 
-RDF: [geofh.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/geofh.ttl)
+RDF: [geofh.ttl](../rdf/foreground/geofh.ttl)
 
 <a href="../assets/geofh/hierarchy.svg">
 <figure id="figure-gfh" markdown style="width:70%">

@@ -1,6 +1,6 @@
 # Mine Model
 
-RDF: [mine.ttl](https://github.com/Geological-Survey-of-Western-Australia/GSWA-Supermodel/blob/main/rdf/components/mine.ttl)
+RDF: [mine.ttl](../rdf/foreground/mine.ttl)
 
 ## Overview
 

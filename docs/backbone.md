@@ -22,7 +22,7 @@ This model only introduces two novel classes at the highest level:
 * `Geological Property`
     *  An observable quality (property, characteristic) of a Geological `Feature`
 
-Specialised parts of the total modelling regime within this Supermodel are handled by _Component Models_, not this Backbone Model. For example, specialised types of man-made `Feature` are defined in the [Geo Features Hierarchy](components/geofh.md) component model.
+Specialised parts of the total modelling regime within this Supermodel are handled by _Component Models_, not this Backbone Model. For example, specialised types of man-made `Feature` are defined in the [Geo Features Hierarchy](foreground/geofh.md) component model.
 
 ### Examples
 
@@ -67,7 +67,7 @@ An example of invalid dummy data:
 
 This model is formally defined as a profile of a number of standards in the profile definition:
 
-* [Backbone Model Profile Declaration](https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/backbone/profile.ttl)
+* [Backbone Model Profile Declaration](rdf/backbone/profile.ttl)
 
 This can be summarised like this: 
 
@@ -89,22 +89,22 @@ The profile resources and their roles are as follows:
 
 **Resource** | **Role**
 --- | ---
-[Profile Declaration](https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/backbone/profile.ttl) | profile definition
-[Validator](https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/backbone/validator.ttl) | [Validation](https://www.w3.org/TR/dx-prof/#Role:validation)
-[Compounded Validator](https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/backbone/validator-compounded.ttl) | [Validation](https://www.w3.org/TR/dx-prof/#Role:validation)
+[Profile Declaration](rdf/backbone/profile.ttl) | profile definition
+[Validator](rdf/backbone/validator.ttl) | [Validation](https://www.w3.org/TR/dx-prof/#Role:validation)
+[Compounded Validator](rdf/backbone/validator-compounded.ttl) | [Validation](https://www.w3.org/TR/dx-prof/#Role:validation)
 this documentation | [Specification](https://www.w3.org/TR/dx-prof/#Role:guidance) & [Guidance](https://www.w3.org/TR/dx-prof/#Role:guidance)
 
 
 ## Validator
 
-* [Backbone Model validator](https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/backbone/validator.ttl)
+* [Backbone Model validator](rdf/backbone/validator.ttl)
 
 This validator only tests for specific rules encoded within this _Backbone Model_. 
 
 To test data for full conformance to this _Backbone Model_ and all the things that this _Backbone Model_ profiles, such
 as GeoSPARQL, VocPub etc., use the compounded validator:
 
-* [Backbone Model compounded validator](https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/backbone/validator-compounded.ttl)
+* [Backbone Model compounded validator](rdf/backbone/validator-compounded.ttl)
 
 This validator contains the Backbone Model validator and all dependent validators too.
 

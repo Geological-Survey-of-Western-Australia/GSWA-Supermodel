@@ -1,1 +1,0 @@
-# MINDEX Component Model

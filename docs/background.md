@@ -1,6 +1,6 @@
 # Background Models
 
-Background Models are models that this Supermodel's [Foreground Models](foreground.md) and [Component Models](components/index.md) inherit from.
+Background Models are models that this Supermodel's [Foreground Models](foreground/foreground.md) and [Component Models](components/index.md) inherit from.
 
 Background Models may or may not be directly referred to by data created according to the Foreground or Component Models, however they and thus all data made conforming to this Supermodel _MUST_ conform to all the Background Models.
 

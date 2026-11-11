@@ -5,7 +5,8 @@ extra_css = ["stylesheets/extra.css"]
 nav = [
     "index.md",
     { "Foreground Models" = [
-        "foreground.md",
+        "foreground/index.md",
+        { "DCAT" = "foreground/dcat.md" },
         { "GeoFeatures Hierarchy" = "foreground/geofh.md" },
         { "Bore" = "foreground/bore.md" },
         { "Mine" = "foreground/mine.md" },
@@ -13,10 +14,20 @@ nav = [
         { "Geosample" = "foreground/geosample.md" },
         { "Resource Occurrence" = "foreground/resource-occurrence.md" },
     ] },
-    "background.md",
     { "Component Models" = [
         "components/index.md",
+        { "CIMS" = "components/cims.md" },
+        { "DRILLHOLES" = "components/drillholes.md" },
+        { "ENS" = "components/ens.md" },
+        { "MAGIX" = "components/magix.md" },
+        { "MINEDEX" = "components/minedex.md" },
+        { "WACHEM" = "components/wachem.md" },
+        { "WAGIMS" = "components/wagims.md" },
+        { "WAMEX" = "components/wamex.md" },
+        { "WAPIMS" = "components/wapims.md" },
+        { "WAROX" = "components/warox.md" },
     ] },
+    "background.md",
     "vocabularies.md",
     "pids.md",
 ]
